@@ -1,5 +1,5 @@
 public boolen isCircular(Node head){
-      Node temp = head;
+      Node temp = head.next;
       if(head == null)
         return null;
 	  
