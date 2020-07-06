@@ -9,5 +9,7 @@ public Node reverse( Node head){
         prev = current;
         current = next;
    }
+    
+    return prev;
    
 }
