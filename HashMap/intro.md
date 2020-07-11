@@ -30,6 +30,15 @@ This is the case when the calculated index value is the same for two or more Key
 
 Index=63281940 & (16-1) = 4  
 
+
+
+
+
+### HashMap and LinkedHashMap -
+are two of the most common used Map implementation in Java. Main difference between HashMap and LinkedHashMap is that LinkedHashMap maintains insertion order of keys, order in which keys are inserted in to LinkedHashMap. On the other hand HashMap doesn't maintain any order or keys or values. In terms of Performance there is not much difference between HashMap and LinkedHashMap but yes LinkedHashMap has more memory foot print than HashMap to maintain doubly LinkedList which it uses to keep track of insertion order of keys. Some time you notice that HashMap also returns elements in order e.g. before Java 8 when you use Integer key and then iterate over Map, you would see it returning entries in a particular order, but those are not guaranteed. Any code which is dependent upon ordering provided by HashMap will likely to break in future release when those behavior changes.
+
+Read more: https://www.java67.com/2012/08/difference-between-hashmap-and-LinkedHashMap-Java.html#ixzz6RricpRSm
+
 The value 4 is the computed index value where the Key will be stored in HashMap. In this case, equals() method check that both Keys are equal or not. If Keys are same, replace the value with the current value. Otherwise, connect this node object to the existing node object through the LinkedList. Hence both Keys will be stored at index 4..
 
 
