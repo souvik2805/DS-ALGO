@@ -62,3 +62,14 @@ are two of the most common used Map implementation in Java. Main difference betw
 
 Read more: https://www.java67.com/2012/08/difference-between-hashmap-and-LinkedHashMap-Java.html#ixzz6RricpRSm
 
+
+#### HashMap 
+
+address = 123588
+key = "India"
+value ="INR"
+next = next_node address
+
+####  LinkedHashMap
+HashMap + before and after double linked list
+
