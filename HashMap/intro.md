@@ -51,4 +51,5 @@ then **Rehashing** takes places and the size of the hashbecome 32.
 To overcome this problem we can pass the HashMap size and load Factor Manually.
 <br>
 We can pass value to the HashMap constructor(size, load factor)
+<br>
  Map<String, String> countryCapital = new HashMap<>(100,0.75f);
