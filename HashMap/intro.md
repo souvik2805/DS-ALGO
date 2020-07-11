@@ -40,10 +40,15 @@ From the above we can see that Sunny and Aman both have Key = 4 in HashMap of Si
 But we more collision happen then this go to like linked and it operation like O(n)
 <br>
 TO overcome this problem JAVA uses Rehashing takes place after some time 
+<br>
 let our Hash Map size is 16
 And default Load Factor = 0.75
+<br>
 So whenn the size of HashMap = 16*Load Factor = 12
 then **Rehashing** takes places and the size of the hashbecome 32.
  SO the size of hashmap increase 16 32 64 --------
 <br>
-We can pass value to the HashMap constructor(size, 
+To overcome this problem we can pass the HashMap size and load Factor Manually.
+<br>
+We can pass value to the HashMap constructor(size, load factor)
+ Map<String, String> countryCapital = new HashMap<>(100,0.75f);
