@@ -1,5 +1,7 @@
 Given an array of integers, and an integer ‘K’, find the count of pairs of elements in the array whose sum is equal to 'K'.
 //13 JULY 2020
+// suppose Sum = 10; Map [1 ->3][9 ->4] then pair(3*4)
+// But if Map[5->4] then self pair 5C2 or n*(n-1)/2    
 
 import java.util.*;
 import java.util.Map.Entry;
