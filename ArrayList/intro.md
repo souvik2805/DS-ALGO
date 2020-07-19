@@ -8,7 +8,7 @@ Meaning 10 divided by 2^1
 Meaning 10 divided by 2^2
 
 
-### Internal Implement of ArrayList
+## Internal Implement of ArrayList
 
 myList.add(1)
 Java create a default array of size 20
