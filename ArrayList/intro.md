@@ -9,6 +9,7 @@ Meaning 10 divided by 2^2
 
 
 ### Internal Implement of ArrayList
+
 myList.add(1);
 Java create a default array of size 20
 Then on every 20+1 it increase the SIZE of the ARRAY by size = size + size>>1
