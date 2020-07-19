@@ -21,3 +21,5 @@ Size = Size + Size/0.5;  (Increase by 50%)
 20 ->30 ->45
 
 So the Time Complexity on add -. in average runs in O(n) time
+
+List<Integer> myList = new ArrayList<>();
