@@ -1,5 +1,5 @@
 //** LOGIC***
-// PUSH -> stack is empty or If I find small  element at the top
+// PUSH -> stack is empty or If I find greater  element at the top
 // POP -> while the top element is less than the current element...
 
 Sample Input
