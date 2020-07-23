@@ -67,3 +67,93 @@ class Main{
       }
     }
 }
+
+
+
+
+
+
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        StringBuilder sb  = new StringBuilder("");
+        Stack<Character> st = new Stack<>();
+
+        for(int i=0; i<str.length(); i++){
+            char cc = str.charAt(i);
+            if(Character.isLetter(cc)){
+                sb.append(cc);
+                continue;
+            }
+
+            if(cc == '('){
+                st.push(cc);
+            }
+            else if("*/^-+".contains(""+cc)){
+                while(!st.empty() && st.peek() != '(' && hasHighP(st.peek(),cc)){
+                  char op = st.pop();
+                  sb.append(op);   
+                }
+                st.push(cc);
+            }
+            else if(cc == ')'){
+                while(!st.empty() && st.peek() != '('){
+                    char op = st.pop();
+                    sb.append(op);
+                }
+                st.pop();
+            }
+        }
+        while(!st.empty()){
+            char op = st.pop();
+            sb.append(op);
+        }
+        System.out.println(sb);
+    }
+
+    public static boolean hasHighP(char peek, char cc){
+        int p = getP(peek);
+        int c = getP(cc);
+        return p>=c;
+    }
+    
+    public static int getP(char a){
+        switch(a){
+            case '^':
+                     return 5;
+            case '*':
+            case '/':
+                    return 4;
+            case '+':
+            case '-':
+                    return 3;
+            default:
+                    return 100;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
