@@ -15,7 +15,7 @@ class Main{
             if(arr[end] == 0){
                 zero++;
             }
-          if(zero>k){
+          while(zero>k){
                 if(arr[start] ==0){
                     zero--;
                 }
