@@ -31,6 +31,9 @@ This is the case when the calculated index value is the same for two or more Key
 Index=63281940 & (16-1) = 4  
 
 
+### LinkedHashMap get first or last entry
+linkedHashMap.entrySet().toArray()[linkedHashMap.size() -1];
+
 The value 4 is the computed index value where the Key will be stored in HashMap. In this case, equals() method check that both Keys are equal or not. If Keys are same, replace the value with the current value. Otherwise, connect this node object to the existing node object through the LinkedList. Hence both Keys will be stored at index 4..
 
 
